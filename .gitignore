@@ -1,0 +1,27 @@
+# OS / editors
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# Test output (coverage, Vitest browser-mode screenshots, Playwright)
+coverage/
+__screenshots__/
+.vitest-attachments/
+test-results/
+playwright-report/
+
+# Environment
+.env
+.env.local
+.env.*.local
