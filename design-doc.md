@@ -8,14 +8,16 @@ perform actions using an agentic UI.
 # Goals
 
 ## User capabilities
+
 - Users should be able to query expenses using AI, e.g., "How much did I spend
-on groceries last month?"
+  on groceries last month?"
 - Users should be able to generate custom charts, e.g. "Generate a chart
-comparing my groceries expenses in the last 3 months"
+  comparing my groceries expenses in the last 3 months"
 - Users should be able to ask for budget suggestions, e.g. "Help me spend less
-on groceries"
+  on groceries"
 
 ## Engineering qualities
+
 - Token streaming with stop/abort.
 - Tool calls rendered as components.
 - Error states and recovery:
@@ -29,15 +31,15 @@ on groceries"
 # Non-goals
 
 - No bank integration: the purpose of this project is the agentic UI, not data
-integration.
+  integration.
 - No accounts (sign up / log in): additional complexity for a portfolio project.
 - No real financial advice.
 - No SSR or SEO: it's a web application, not an indexable content page.
 - No components from scratch: focus on the AI interaction, use shadcn.
 - No changing LLMs: for simplicity, only support Claude for now (only exception
-for deterministic replay tests which will require mocking the LLM).
+  for deterministic replay tests which will require mocking the LLM).
 - No rewriting chat history: no state management, no need to save previous
-versions of the chat.
+  versions of the chat.
 
 # Stack
 
@@ -59,13 +61,13 @@ versions of the chat.
 - TypeScript: improves code quality and safety.
 - Zod: schemas can be shared with the frontend.
 - Data storage: static JSON file (note: dates should be defined as relative to
-now, to avoid empty results as the data ages).
+  now, to avoid empty results as the data ages).
 
 ## AI
 
 - Vercel AI SDK (latest, v7) for tool calling.
 - Vercel Firewall (WAF): rate limiting to prevent abuse. Simpler to implement
-than @upstash/ratelimit which requires a Redis store.
+  than @upstash/ratelimit which requires a Redis store.
 - Claude Haiku 5.5: good for quick tasks.
 
 ## CI
@@ -88,12 +90,21 @@ than @upstash/ratelimit which requires a Redis store.
 # Tools
 
 ```typescript
-import { tool } from "ai";
-import { z } from "zod";
+import { tool } from 'ai';
+import { z } from 'zod';
 
-const CATEGORIES = ['groceries', 'dining', 'health', 'shopping', 'transportation', 'rent', 'fun', 'other'] as const;
+const CATEGORIES = [
+  'groceries',
+  'dining',
+  'health',
+  'shopping',
+  'transportation',
+  'rent',
+  'fun',
+  'other',
+] as const;
 
-type Category = typeof CATEGORIES[number];
+type Category = (typeof CATEGORIES)[number];
 
 type Transaction = {
   id: number;
@@ -101,10 +112,10 @@ type Transaction = {
   category: Category;
   merchant: string;
   amount: number; // cents, i.e., 3456 means $34.56
-}
+};
 
 const queryTransactions = tool({
-  description: 'Query the user\'s transactions, filtering by date, categories, merchants.',
+  description: "Query the user's transactions, filtering by date, categories, merchants.",
   inputSchema: z.object({
     from: z.iso.date(),
     to: z.iso.date(),
@@ -138,13 +149,19 @@ const renderChart = tool({
     chartType: z.enum(['bar', 'line', 'pie']),
     groupBy: z.enum(['month', 'category', 'merchant']),
     seriesBy: z.enum(['month', 'category', 'merchant']).optional(),
-    series: z.array(z.object({
-      key: z.string(),
-      label: z.string(),
-    })),
-    data: z.array(z.object({
-      x: z.string(),
-    }).catchall(z.number())),
+    series: z.array(
+      z.object({
+        key: z.string(),
+        label: z.string(),
+      }),
+    ),
+    data: z.array(
+      z
+        .object({
+          x: z.string(),
+        })
+        .catchall(z.number()),
+    ),
   }),
   execute: async ({ from, to, categories, merchants, chartType, groupBy, seriesBy }) => {
     return {
@@ -158,20 +175,23 @@ const renderChart = tool({
 });
 
 const proposeBudget = tool({
-  description: 'Draft a monthly budget. The user must approve it before it is saved to localStorage.',
+  description:
+    'Draft a monthly budget. The user must approve it before it is saved to localStorage.',
   inputSchema: z.object({
     month: z.string(), // .regex() YYYY-MM
-    limits: z.array(z.object({
-      category: z.enum(CATEGORIES),
-      amount: z.int().positive(), // cents
-      rationale: z.string().optional(),
-    })),
+    limits: z.array(
+      z.object({
+        category: z.enum(CATEGORIES),
+        amount: z.int().positive(), // cents
+        rationale: z.string().optional(),
+      }),
+    ),
   }),
   // no execute: the client renders the approval form and returns the user's decision
-})
+});
 ```
 
 # Notes
 
 - Calling the AI model via API requires injecting the current date in the
-request.
+  request.
