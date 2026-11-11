@@ -1,0 +1,501 @@
+id,daysAgo,category,merchant,amount
+1,179,rent,Parkside Apartments,245000
+2,179,health,Walgreens,5821
+3,179,health,One Medical,10931
+4,179,groceries,Kroger,11985
+5,179,dining,Sushi House,2391
+6,177,shopping,Uniqlo,12509
+7,177,dining,Starbucks,4727
+8,177,shopping,Best Buy,7633
+9,177,fun,Spotify,7382
+10,176,groceries,Trader Joe's,14546
+11,176,transportation,Lyft,2821
+12,175,shopping,Best Buy,15621
+13,175,dining,Chipotle,2702
+14,174,dining,Local Pizzeria,2756
+15,174,dining,Olive Garden,499
+16,174,health,Walgreens,13181
+17,174,transportation,Uber,1320
+18,173,transportation,Metro Transit,6984
+19,173,dining,Shake Shack,619
+20,173,transportation,Lyft,3408
+21,173,dining,Shake Shack,4981
+22,172,shopping,Best Buy,1577
+23,172,other,USPS,5363
+24,171,shopping,IKEA,27289
+25,171,dining,Sweetgreen,8406
+26,170,fun,AMC Theatres,1102
+27,170,dining,Starbucks,1624
+28,170,health,Planet Fitness,24941
+29,169,groceries,Aldi,14161
+30,169,health,CVS Pharmacy,18434
+31,169,shopping,Home Depot,27395
+32,168,dining,Starbucks,1325
+33,168,other,USPS,5088
+34,168,dining,Chipotle,4402
+35,168,groceries,Safeway,8625
+36,168,fun,Ticketmaster,3783
+37,168,dining,Shake Shack,1983
+38,167,dining,Local Pizzeria,4688
+39,167,shopping,Home Depot,9829
+40,167,dining,Local Pizzeria,4736
+41,166,other,Dry Cleaners,8878
+42,166,health,CVS Pharmacy,20437
+43,165,shopping,Uniqlo,20479
+44,165,health,Walgreens,1147
+45,165,transportation,Lyft,7423
+46,164,dining,Blue Bottle Coffee,7042
+47,164,groceries,Costco,4843
+48,163,dining,Blue Bottle Coffee,3710
+49,162,transportation,Uber,4592
+50,161,dining,Olive Garden,7080
+51,160,dining,Starbucks,2083
+52,160,dining,Local Pizzeria,4064
+53,160,groceries,Whole Foods,7452
+54,160,other,PG&E,18675
+55,160,other,Comcast,1570
+56,160,groceries,Kroger,11009
+57,159,shopping,Home Depot,6493
+58,159,groceries,Kroger,8552
+59,158,shopping,Home Depot,12522
+60,158,dining,Starbucks,7803
+61,157,groceries,Whole Foods,17926
+62,157,fun,Steam,12868
+63,157,groceries,Costco,3410
+64,156,dining,Starbucks,6651
+65,156,groceries,Costco,8290
+66,155,transportation,City Parking,3074
+67,155,groceries,Safeway,5011
+68,155,groceries,Whole Foods,7950
+69,155,groceries,Aldi,10989
+70,155,dining,Sweetgreen,2118
+71,154,fun,Spotify,7147
+72,154,transportation,Lyft,1514
+73,154,transportation,Lyft,3243
+74,153,dining,Shake Shack,7532
+75,153,fun,Netflix,4472
+76,152,transportation,Uber,1130
+77,151,shopping,Uniqlo,14897
+78,151,dining,Local Pizzeria,7410
+79,151,fun,Steam,5221
+80,151,dining,Sweetgreen,6728
+81,151,groceries,Costco,11873
+82,151,health,Planet Fitness,24455
+83,151,transportation,City Parking,6478
+84,151,dining,Sushi House,6404
+85,149,rent,Parkside Apartments,245000
+86,149,other,USPS,574
+87,149,dining,Local Pizzeria,5410
+88,149,transportation,Lyft,5571
+89,149,dining,Olive Garden,1228
+90,148,dining,Chipotle,8342
+91,148,dining,Shake Shack,4832
+92,148,transportation,Chevron,896
+93,148,groceries,Trader Joe's,3358
+94,148,dining,Sweetgreen,6796
+95,147,health,City Dental,13188
+96,147,shopping,Target,20691
+97,147,groceries,Kroger,17951
+98,147,transportation,Shell,3085
+99,147,groceries,Safeway,16361
+100,146,shopping,Best Buy,17861
+101,145,fun,Ticketmaster,12193
+102,145,groceries,Aldi,13912
+103,144,transportation,Lyft,2504
+104,143,dining,Starbucks,4531
+105,143,groceries,Costco,13578
+106,143,transportation,Metro Transit,3491
+107,142,dining,Local Pizzeria,7282
+108,141,groceries,Safeway,7876
+109,141,groceries,Whole Foods,4402
+110,141,dining,Olive Garden,1646
+111,139,shopping,Amazon,1817
+112,139,dining,Sushi House,3525
+113,139,transportation,Shell,7198
+114,139,fun,Steam,3178
+115,139,transportation,Lyft,1250
+116,139,other,Comcast,4424
+117,139,dining,Shake Shack,5389
+118,138,other,Verizon,7846
+119,138,health,Planet Fitness,3352
+120,138,fun,Netflix,12192
+121,138,groceries,Safeway,10744
+122,137,health,One Medical,12018
+123,137,transportation,Metro Transit,515
+124,136,dining,Sweetgreen,4916
+125,135,shopping,IKEA,16432
+126,135,health,CVS Pharmacy,13223
+127,135,transportation,Lyft,5154
+128,135,dining,Starbucks,5151
+129,134,groceries,Costco,12010
+130,134,shopping,Target,1596
+131,134,dining,Starbucks,7246
+132,134,shopping,Target,8818
+133,132,dining,Olive Garden,7095
+134,132,transportation,City Parking,7011
+135,132,shopping,Uniqlo,13705
+136,131,dining,Olive Garden,7271
+137,131,dining,Local Pizzeria,5347
+138,131,dining,Starbucks,1253
+139,130,groceries,Kroger,17527
+140,130,dining,Blue Bottle Coffee,2758
+141,129,groceries,Kroger,11348
+142,129,groceries,Trader Joe's,8907
+143,129,groceries,Costco,11026
+144,128,dining,Shake Shack,1068
+145,128,shopping,Uniqlo,1725
+146,128,groceries,Kroger,4158
+147,127,other,Comcast,9203
+148,127,transportation,Shell,1272
+149,126,other,Comcast,10062
+150,126,groceries,Kroger,17121
+151,126,shopping,Home Depot,19418
+152,126,transportation,Uber,4440
+153,125,dining,Blue Bottle Coffee,6054
+154,125,groceries,Trader Joe's,6713
+155,125,health,Walgreens,19686
+156,125,health,One Medical,1664
+157,124,transportation,Chevron,1454
+158,124,groceries,Whole Foods,5289
+159,124,other,Verizon,10807
+160,124,groceries,Trader Joe's,16543
+161,124,groceries,Safeway,12848
+162,123,groceries,Trader Joe's,17284
+163,123,transportation,Metro Transit,5711
+164,123,other,PG&E,18981
+165,122,groceries,Trader Joe's,1530
+166,122,groceries,Costco,17659
+167,122,dining,Local Pizzeria,5935
+168,121,transportation,Metro Transit,4757
+169,121,transportation,Chevron,1804
+170,121,shopping,Amazon,19521
+171,121,groceries,Safeway,16786
+172,120,shopping,Uniqlo,5753
+173,120,groceries,Aldi,10993
+174,120,groceries,Costco,17735
+175,120,shopping,Uniqlo,19865
+176,120,groceries,Trader Joe's,3945
+177,120,transportation,Metro Transit,786
+178,120,transportation,Shell,1338
+179,119,rent,Parkside Apartments,245000
+180,119,transportation,Chevron,795
+181,119,dining,Chipotle,8095
+182,119,transportation,Lyft,1882
+183,118,groceries,Trader Joe's,2900
+184,118,groceries,Aldi,14697
+185,118,groceries,Costco,5516
+186,117,transportation,Uber,1507
+187,117,fun,Spotify,9081
+188,117,transportation,Metro Transit,2794
+189,116,fun,Bowling Alley,3950
+190,116,groceries,Trader Joe's,11982
+191,116,shopping,Target,20846
+192,114,groceries,Costco,14061
+193,113,shopping,Target,6234
+194,113,dining,Shake Shack,8795
+195,113,dining,Local Pizzeria,3803
+196,113,dining,Blue Bottle Coffee,4902
+197,113,groceries,Trader Joe's,11053
+198,112,health,Walgreens,22045
+199,112,shopping,Target,9951
+200,111,groceries,Costco,9453
+201,111,groceries,Costco,3997
+202,111,transportation,Shell,1554
+203,110,groceries,Kroger,6270
+204,110,health,CVS Pharmacy,10701
+205,110,dining,Sweetgreen,3149
+206,109,groceries,Whole Foods,10814
+207,109,fun,AMC Theatres,1578
+208,109,health,Walgreens,1074
+209,109,shopping,Amazon,8085
+210,109,health,City Dental,6044
+211,109,groceries,Aldi,2159
+212,109,groceries,Trader Joe's,8420
+213,109,shopping,IKEA,19107
+214,108,fun,Bowling Alley,11211
+215,105,dining,Local Pizzeria,8013
+216,105,dining,Sushi House,6584
+217,105,shopping,IKEA,11765
+218,105,dining,Blue Bottle Coffee,9138
+219,104,transportation,Shell,6651
+220,104,groceries,Kroger,5354
+221,104,dining,Sweetgreen,8179
+222,104,fun,Spotify,11247
+223,103,other,USPS,15852
+224,102,fun,Bowling Alley,11599
+225,102,dining,Sushi House,1592
+226,102,transportation,Lyft,2083
+227,101,shopping,Target,2482
+228,101,dining,Olive Garden,2664
+229,101,shopping,Uniqlo,4368
+230,101,health,Walgreens,3761
+231,100,health,One Medical,16682
+232,100,shopping,IKEA,7535
+233,99,groceries,Costco,10833
+234,99,fun,Bowling Alley,12016
+235,98,shopping,Amazon,3672
+236,97,groceries,Whole Foods,15433
+237,97,dining,Olive Garden,6680
+238,96,groceries,Whole Foods,8262
+239,96,dining,Blue Bottle Coffee,6104
+240,96,groceries,Safeway,14363
+241,95,other,PG&E,1857
+242,95,dining,Blue Bottle Coffee,9299
+243,95,transportation,Shell,830
+244,95,health,City Dental,5512
+245,95,dining,Chipotle,8425
+246,94,dining,Olive Garden,5379
+247,93,transportation,Lyft,5427
+248,92,transportation,City Parking,5210
+249,92,transportation,Metro Transit,1392
+250,91,health,Planet Fitness,13034
+251,91,shopping,Target,29081
+252,91,dining,Olive Garden,2145
+253,91,dining,Blue Bottle Coffee,6578
+254,90,fun,Spotify,3522
+255,90,other,Dry Cleaners,13187
+256,90,groceries,Costco,13155
+257,90,shopping,Best Buy,13731
+258,90,dining,Local Pizzeria,2848
+259,90,groceries,Kroger,10654
+260,90,fun,Ticketmaster,4576
+261,89,rent,Parkside Apartments,245000
+262,89,transportation,City Parking,6373
+263,89,health,Planet Fitness,13021
+264,89,dining,Olive Garden,1595
+265,89,dining,Sushi House,4936
+266,89,dining,Sweetgreen,1099
+267,89,transportation,Metro Transit,5658
+268,89,other,PG&E,7182
+269,88,shopping,Amazon,4391
+270,88,shopping,Target,8731
+271,88,dining,Starbucks,6356
+272,87,shopping,Home Depot,9550
+273,86,shopping,Target,4407
+274,86,health,Planet Fitness,21474
+275,86,groceries,Aldi,17601
+276,86,shopping,Target,13437
+277,85,shopping,Best Buy,27850
+278,85,dining,Sushi House,2119
+279,85,fun,AMC Theatres,11887
+280,84,groceries,Aldi,6801
+281,84,groceries,Kroger,11195
+282,84,shopping,Uniqlo,17399
+283,83,shopping,Target,4821
+284,83,groceries,Kroger,6421
+285,82,transportation,Uber,5805
+286,82,transportation,Lyft,4940
+287,82,groceries,Kroger,2379
+288,82,groceries,Costco,5124
+289,82,groceries,Trader Joe's,9163
+290,81,dining,Starbucks,4702
+291,81,transportation,Metro Transit,2607
+292,80,transportation,Uber,821
+293,80,other,Dry Cleaners,6050
+294,80,groceries,Costco,11568
+295,79,groceries,Whole Foods,6805
+296,79,fun,AMC Theatres,12651
+297,79,other,Dry Cleaners,1900
+298,79,groceries,Aldi,5459
+299,79,other,PG&E,4673
+300,79,transportation,Chevron,541
+301,78,fun,Spotify,3777
+302,78,dining,Local Pizzeria,1596
+303,78,other,Venmo,3107
+304,77,transportation,Uber,4267
+305,76,transportation,Chevron,307
+306,74,shopping,Amazon,26301
+307,74,transportation,City Parking,5450
+308,74,transportation,Shell,1389
+309,74,dining,Blue Bottle Coffee,1500
+310,73,fun,Steam,1808
+311,73,transportation,Uber,2022
+312,73,groceries,Costco,12991
+313,73,dining,Sweetgreen,7236
+314,70,groceries,Whole Foods,5523
+315,70,shopping,Best Buy,29840
+316,70,shopping,Best Buy,12337
+317,70,other,Dry Cleaners,8543
+318,70,health,Walgreens,20136
+319,70,dining,Blue Bottle Coffee,4596
+320,69,groceries,Trader Joe's,2908
+321,69,health,CVS Pharmacy,14529
+322,68,groceries,Trader Joe's,16978
+323,68,transportation,City Parking,6006
+324,67,groceries,Whole Foods,11443
+325,67,groceries,Kroger,6358
+326,67,shopping,IKEA,12630
+327,66,groceries,Trader Joe's,10673
+328,66,transportation,Metro Transit,3784
+329,65,fun,Ticketmaster,13404
+330,65,shopping,Target,10217
+331,65,groceries,Safeway,14734
+332,65,fun,Spotify,10033
+333,64,dining,Shake Shack,1996
+334,64,dining,Sweetgreen,9466
+335,63,shopping,Best Buy,20152
+336,63,transportation,Lyft,6580
+337,63,fun,Bowling Alley,7862
+338,63,groceries,Safeway,14030
+339,62,shopping,Amazon,27791
+340,62,transportation,Metro Transit,2412
+341,62,groceries,Kroger,16823
+342,62,groceries,Kroger,10438
+343,61,transportation,Chevron,6702
+344,61,groceries,Whole Foods,7659
+345,61,transportation,Chevron,976
+346,61,groceries,Safeway,5351
+347,61,transportation,Uber,5083
+348,60,groceries,Costco,6640
+349,60,groceries,Trader Joe's,14561
+350,59,rent,Parkside Apartments,245000
+351,59,dining,Blue Bottle Coffee,6475
+352,59,groceries,Trader Joe's,11984
+353,59,fun,Steam,10305
+354,59,groceries,Safeway,1547
+355,59,dining,Local Pizzeria,1554
+356,59,shopping,Amazon,28940
+357,58,fun,Spotify,13921
+358,57,groceries,Whole Foods,2041
+359,57,groceries,Trader Joe's,10278
+360,56,dining,Sushi House,2627
+361,56,other,USPS,1317
+362,56,dining,Chipotle,8707
+363,56,transportation,Shell,4781
+364,55,fun,Netflix,4692
+365,55,dining,Olive Garden,9239
+366,55,health,City Dental,3999
+367,55,shopping,IKEA,8648
+368,54,health,City Dental,6369
+369,54,transportation,City Parking,3473
+370,54,dining,Local Pizzeria,6255
+371,54,dining,Local Pizzeria,3457
+372,54,shopping,Best Buy,4084
+373,53,fun,Ticketmaster,11770
+374,52,health,City Dental,19226
+375,52,health,One Medical,9258
+376,52,fun,AMC Theatres,4778
+377,52,other,PG&E,11020
+378,51,dining,Starbucks,2927
+379,51,groceries,Aldi,10723
+380,51,dining,Olive Garden,4489
+381,50,dining,Chipotle,3508
+382,49,transportation,Lyft,1660
+383,48,groceries,Aldi,5076
+384,48,dining,Chipotle,5290
+385,48,health,CVS Pharmacy,23761
+386,47,dining,Sweetgreen,4657
+387,47,groceries,Whole Foods,17545
+388,47,transportation,Uber,7387
+389,46,other,Venmo,5938
+390,46,transportation,Chevron,5242
+391,44,transportation,Shell,7050
+392,43,shopping,Target,9454
+393,43,other,PG&E,14492
+394,43,transportation,Uber,2749
+395,43,dining,Sweetgreen,464
+396,42,fun,Spotify,7426
+397,42,dining,Sweetgreen,8299
+398,42,health,One Medical,17004
+399,41,groceries,Kroger,10186
+400,41,dining,Local Pizzeria,2590
+401,41,fun,Bowling Alley,9261
+402,40,groceries,Aldi,8048
+403,40,fun,Steam,3995
+404,39,transportation,Chevron,3300
+405,39,fun,AMC Theatres,10805
+406,38,dining,Sushi House,1346
+407,38,shopping,Home Depot,7717
+408,37,dining,Blue Bottle Coffee,8124
+409,37,dining,Sweetgreen,5258
+410,36,groceries,Costco,16834
+411,35,dining,Sushi House,7329
+412,35,groceries,Whole Foods,4715
+413,35,groceries,Costco,5871
+414,34,groceries,Kroger,11740
+415,34,health,City Dental,18635
+416,34,shopping,Best Buy,21697
+417,32,shopping,Uniqlo,8499
+418,32,dining,Chipotle,4098
+419,32,groceries,Aldi,13215
+420,32,transportation,City Parking,755
+421,30,groceries,Whole Foods,14375
+422,29,rent,Parkside Apartments,245000
+423,29,groceries,Costco,7663
+424,29,health,CVS Pharmacy,6771
+425,29,transportation,Lyft,3842
+426,28,groceries,Whole Foods,7625
+427,28,fun,Steam,4794
+428,28,fun,Ticketmaster,11042
+429,28,shopping,Uniqlo,18075
+430,28,fun,Spotify,9168
+431,28,transportation,Shell,2096
+432,28,dining,Chipotle,6914
+433,27,transportation,Metro Transit,2869
+434,27,shopping,Amazon,13011
+435,27,groceries,Trader Joe's,4694
+436,27,health,Planet Fitness,19382
+437,26,fun,Netflix,9918
+438,26,dining,Starbucks,5003
+439,26,health,City Dental,22380
+440,26,shopping,Best Buy,8631
+441,25,groceries,Trader Joe's,10272
+442,25,groceries,Costco,5624
+443,25,transportation,Chevron,2708
+444,24,shopping,Uniqlo,1763
+445,23,groceries,Whole Foods,14552
+446,23,dining,Shake Shack,7241
+447,23,other,Venmo,7504
+448,22,groceries,Costco,17550
+449,22,groceries,Kroger,17203
+450,20,groceries,Whole Foods,7620
+451,20,other,PG&E,5550
+452,19,shopping,Amazon,19182
+453,19,shopping,Best Buy,24953
+454,18,groceries,Whole Foods,6136
+455,18,groceries,Safeway,11569
+456,18,other,Verizon,3998
+457,18,health,Planet Fitness,3166
+458,18,dining,Sushi House,6092
+459,18,fun,AMC Theatres,11023
+460,17,shopping,Target,10724
+461,17,transportation,City Parking,853
+462,17,dining,Olive Garden,8365
+463,16,groceries,Aldi,7155
+464,16,transportation,City Parking,1026
+465,15,dining,Sweetgreen,4960
+466,14,other,Verizon,3870
+467,14,transportation,Lyft,4841
+468,14,dining,Local Pizzeria,5970
+469,13,other,Dry Cleaners,15164
+470,13,other,Comcast,12505
+471,12,health,Walgreens,12346
+472,12,dining,Sushi House,2484
+473,12,dining,Starbucks,6482
+474,12,fun,Steam,13309
+475,11,groceries,Safeway,5641
+476,11,other,Verizon,19874
+477,10,dining,Olive Garden,5577
+478,10,groceries,Whole Foods,10010
+479,9,groceries,Kroger,6052
+480,8,dining,Sweetgreen,2270
+481,7,dining,Local Pizzeria,8752
+482,6,dining,Local Pizzeria,9320
+483,6,transportation,Metro Transit,2437
+484,6,groceries,Trader Joe's,7149
+485,6,groceries,Safeway,14047
+486,6,dining,Olive Garden,5948
+487,6,fun,Spotify,4992
+488,6,dining,Local Pizzeria,4316
+489,6,transportation,City Parking,2196
+490,6,transportation,Lyft,5686
+491,5,shopping,Target,8444
+492,4,groceries,Safeway,2241
+493,4,dining,Local Pizzeria,3277
+494,4,shopping,Uniqlo,24802
+495,4,dining,Shake Shack,7484
+496,3,transportation,Shell,7298
+497,3,dining,Olive Garden,747
+498,2,shopping,IKEA,11459
+499,1,groceries,Safeway,16154
+500,0,transportation,Chevron,3659

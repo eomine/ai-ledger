@@ -7,6 +7,7 @@
   "main": "src/server.ts",
   "scripts": {
     "start": "node src/server.ts",
+    "generate:data": "node scripts/generate-transactions.ts",
     "lint": "oxlint",
     "format": "oxfmt",
     "test": "vitest",
