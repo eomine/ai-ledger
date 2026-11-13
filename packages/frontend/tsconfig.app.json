@@ -8,7 +8,10 @@
     "moduleResolution": "bundler",
     "types": ["vite/client"],
     "allowArbitraryExtensions": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
