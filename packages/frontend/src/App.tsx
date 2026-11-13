@@ -1,14 +1,9 @@
-import { CATEGORIES } from '@ai-ledger/schema/categories';
+import { ChatDemo } from './Chat';
 
 function App() {
   return (
     <section>
-      <h1>Hello World!</h1>
-      <ul>
-        {CATEGORIES.map((category) => (
-          <li key={category}>{category}</li>
-        ))}
-      </ul>
+      <ChatDemo />
     </section>
   );
 }

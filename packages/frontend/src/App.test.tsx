@@ -5,6 +5,8 @@ import App from './App';
 describe('App', () => {
   it('renders', async () => {
     const { getByText } = await render(<App />);
-    await expect.element(getByText('Hello World!')).toBeInTheDocument();
+    await expect
+      .element(getByText('How much did I spend on groceries last month?'))
+      .toBeInTheDocument();
   });
 });
