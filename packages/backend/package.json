@@ -6,7 +6,7 @@
   "type": "module",
   "main": "src/server.ts",
   "scripts": {
-    "start": "node src/server.ts",
+    "start": "node --env-file-if-exists=.env src/server.ts",
     "generate:data": "node scripts/generate-transactions.ts",
     "lint": "oxlint",
     "format": "oxfmt",
@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@ai-ledger/schema": "workspace:*",
+    "@ai-sdk/anthropic": "^4.0.104",
+    "ai": "^7.0.172",
     "express": "^5.3.0"
   },
   "devDependencies": {

@@ -56,3 +56,32 @@ export const proposeBudget = z.strictObject({
     }),
   ),
 });
+
+function isTimeZone(value: string): boolean {
+  try {
+    new Intl.DateTimeFormat('en-US', { timeZone: value });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Body of POST /chat, as sent by the AI SDK's `useChat` default transport.
+ * Unknown keys (e.g. `id`, `messageId`, extra `body` fields) are stripped.
+ * The structure of each message is validated by the backend with the AI SDK's
+ * `validateUIMessages`; this schema only bounds the request.
+ *
+ * `timeZone` is an extra field the frontend adds through useChat's `body`
+ * option (`Intl.DateTimeFormat().resolvedOptions().timeZone`), so "today"
+ * matches the user's calendar. Defaults to UTC.
+ */
+export const chatRequest = z.object({
+  // The chat history is never rewritten, so regenerating a reply is not supported.
+  trigger: z.literal('submit-message').optional(),
+  messages: z.array(z.unknown()).min(1).max(100),
+  timeZone: z.string().refine(isTimeZone, 'Invalid IANA time zone').optional(),
+});
+
+/** Maximum length of the text a user sends in one message. */
+export const MAX_USER_MESSAGE_CHARS = 10_000;

@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { queryTransactions, renderChartInput, renderChartOutput, proposeBudget } from './index.ts';
+import {
+  chatRequest,
+  queryTransactions,
+  renderChartInput,
+  renderChartOutput,
+  proposeBudget,
+} from './index.ts';
 import { ZodError } from 'zod';
 
 describe('queryTransactions', () => {
@@ -133,5 +139,36 @@ describe('proposeBudget', () => {
         }
       }
     }
+  });
+});
+
+describe('chatRequest', () => {
+  const message = { id: 'm1', role: 'user', parts: [{ type: 'text', text: 'hi' }] };
+
+  it('accepts a useChat request body and strips unknown keys', () => {
+    const body = {
+      id: 'chat1',
+      trigger: 'submit-message',
+      messageId: undefined,
+      messages: [message],
+    };
+    expect(chatRequest.parse(body)).toEqual({ trigger: 'submit-message', messages: [message] });
+  });
+
+  it('accepts an IANA time zone', () => {
+    const body = { messages: [message], timeZone: 'America/Sao_Paulo' };
+    expect(chatRequest.parse(body)).toEqual(body);
+  });
+
+  it.each([
+    ['missing messages', {}],
+    ['empty messages', { messages: [] }],
+    ['non-array messages', { messages: 'hi' }],
+    ['too many messages', { messages: Array.from({ length: 101 }, () => message) }],
+    ['regenerate trigger', { trigger: 'regenerate-message', messages: [message] }],
+    ['invalid time zone', { messages: [message], timeZone: 'Not/A_Zone' }],
+    ['non-string time zone', { messages: [message], timeZone: -3 }],
+  ])('rejects %s', (_name, body) => {
+    expect(chatRequest.safeParse(body).success).toBe(false);
   });
 });

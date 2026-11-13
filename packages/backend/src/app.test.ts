@@ -1,6 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import request from 'supertest';
-import app from './app.ts';
+import { createApp } from './app.ts';
+
+const app = createApp();
 
 describe('GET /', () => {
   it("should return 'Hello World!'", async () => {
@@ -52,5 +54,22 @@ describe('POST /queryTransactions', () => {
     expect(res.type).toEqual('application/json');
     expect(res.body).toEqual({ error: 'Malformed JSON body' });
     expect(res.text).not.toContain('node_modules');
+  });
+
+  it('rejects other body-parser client errors with their status and a JSON error', async () => {
+    const res = await request(app)
+      .post('/queryTransactions')
+      .set('Content-Type', 'application/json; charset=latin-9')
+      .send('{}');
+    expect(res.status).toBe(415);
+    expect(res.body).toEqual({ error: 'Invalid request body' });
+  });
+
+  it('rejects an oversized body with a 413 JSON error', async () => {
+    const res = await request(app)
+      .post('/queryTransactions')
+      .send({ from: 'a'.repeat(200_000) });
+    expect(res.status).toBe(413);
+    expect(res.body).toEqual({ error: 'Request body too large' });
   });
 });
