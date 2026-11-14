@@ -82,6 +82,3 @@ export const chatRequest = z.object({
   messages: z.array(z.unknown()).min(1).max(100),
   timeZone: z.string().refine(isTimeZone, 'Invalid IANA time zone').optional(),
 });
-
-/** Maximum length of the text a user sends in one message. */
-export const MAX_USER_MESSAGE_CHARS = 10_000;

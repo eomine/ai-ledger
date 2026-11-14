@@ -1,4 +1,5 @@
-import { chatRequest, MAX_USER_MESSAGE_CHARS } from '@ai-ledger/schema';
+import { chatRequest } from '@ai-ledger/schema';
+import { MAX_USER_MESSAGE_CHARS } from '@ai-ledger/schema/chat';
 import type { AnthropicLanguageModelOptions } from '@ai-sdk/anthropic';
 import {
   convertToModelMessages,
