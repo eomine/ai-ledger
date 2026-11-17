@@ -158,11 +158,23 @@ describe('describeChatError', () => {
     [apiError(413), 'This conversation is too long to send. Reload the page to start a new one.'],
     [apiError(500), 'The server is unavailable right now. Please try again in a moment.'],
     [apiError(502), 'The server is unavailable right now. Please try again in a moment.'],
-    [new TypeError('Failed to fetch'), 'Lost connection to the server. Check your connection and try again.'],
-    [new TypeError('network error'), 'Lost connection to the server. Check your connection and try again.'],
+    [
+      new TypeError('Failed to fetch'),
+      'Lost connection to the server. Check your connection and try again.',
+    ],
+    [
+      new TypeError('network error'),
+      'Lost connection to the server. Check your connection and try again.',
+    ],
     [new ChatTimeoutError(10), 'The server stopped responding. Please try again.'],
-    [new Error('raw provider message'), 'Something went wrong while generating a response. Please try again.'],
-    [new TypeError('x is not a function'), 'Something went wrong while generating a response. Please try again.'],
+    [
+      new Error('raw provider message'),
+      'Something went wrong while generating a response. Please try again.',
+    ],
+    [
+      new TypeError('x is not a function'),
+      'Something went wrong while generating a response. Please try again.',
+    ],
   ])('describes %s', (error, message) => {
     expect(describeChatError(error)).toBe(message);
   });
