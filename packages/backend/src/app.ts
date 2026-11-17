@@ -20,7 +20,7 @@ export interface AppOptions {
 export function createApp({ model = anthropic(DEFAULT_MODEL) }: AppOptions = {}): Express {
   const app: Express = express();
 
-  app.use(express.json());
+  app.use(express.json({ limit: '1MB' }));
 
   app.get('/', (_req: Request, res: Response) => {
     res.send('Hello World!');

@@ -68,7 +68,7 @@ describe('POST /queryTransactions', () => {
   it('rejects an oversized body with a 413 JSON error', async () => {
     const res = await request(app)
       .post('/queryTransactions')
-      .send({ from: 'a'.repeat(200_000) });
+      .send({ from: 'a'.repeat(1_100_000) }); // over the 1MB limit
     expect(res.status).toBe(413);
     expect(res.body).toEqual({ error: 'Request body too large' });
   });
