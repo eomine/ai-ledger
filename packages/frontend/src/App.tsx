@@ -1,9 +1,9 @@
-import { ChatDemo } from './Chat';
+import { Chat } from './Chat';
 
 function App() {
   return (
     <section>
-      <ChatDemo />
+      <Chat />
     </section>
   );
 }
