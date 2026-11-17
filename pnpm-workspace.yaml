@@ -4,6 +4,7 @@ packages:
 # Shared versions. Packages reference these with "catalog:".
 catalog:
   '@types/node': ^26.6.6
+  ai: ^7.0.176
   oxfmt: ^0.78.0
   oxlint: ^1.93.0
   typescript: ^7.0.2
