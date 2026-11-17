@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@ai-ledger/schema": "workspace:*",
+    "@ai-sdk/react": "^4.0.177",
     "@base-ui/react": "^1.9.0",
     "@fontsource-variable/noto-sans": "^5.3.0",
     "@shadcn/react": "^0.3.1",
+    "ai": "^7.0.176",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.5.2",
     "lucide-react": "^1.72.0",
