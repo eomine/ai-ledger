@@ -10,4 +10,8 @@ export default defineConfig({
   resolve: {
     alias: { '@': path.resolve(import.meta.dirname, './src') },
   },
+  server: {
+    // The backend listens on PORT (default 3000); see packages/backend.
+    proxy: { '/chat': process.env.BACKEND_URL ?? 'http://localhost:3000' },
+  },
 });
